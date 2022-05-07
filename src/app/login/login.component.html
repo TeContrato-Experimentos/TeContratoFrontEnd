@@ -1,0 +1,28 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+
+  <mat-card fxFlex="25" class="card1">
+    <img mat-card-image src="assets/TeContrato.png" alt="Logo" >
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+      <mat-form-field>
+        <input matInput placeholder="Email" [formControl]="emailFormControl" [errorStateMatcher]="matcher" [(ngModel)]="emailexist">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">Please enter a valid email address</mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password" type="password" [formControl]="passwordFormControl" [errorStateMatcher]="matcher"
+               [(ngModel)]="passwordexist">
+        <mat-error *ngIf="passwordFormControl.hasError('required')">
+          Password is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <br>
+      <button (click)="getAllUsers()" mat-raised-button type="submit" color="primary">Log In</button>
+
+      <br>
+      <button mat-raised-button type="submit" routerLink="firstStepRegistration" color="primary">Register</button>
+    </form>
+
+  </mat-card>
+</div>

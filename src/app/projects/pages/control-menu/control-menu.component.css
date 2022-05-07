@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.workbar {
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+.task-card {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+
+#back {
+  text-align: center;
+}

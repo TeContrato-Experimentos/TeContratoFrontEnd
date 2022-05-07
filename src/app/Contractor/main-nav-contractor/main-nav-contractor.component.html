@@ -1,0 +1,39 @@
+<mat-sidenav-container class="class1">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport mode="over">
+    <div class="menu-sidenav">
+      <mat-toolbar >Menu</mat-toolbar>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" class="sidenav-button">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </div>
+    <mat-nav-list >
+      <br><br><br>
+      <a mat-list-item  routerLink="/contractor/home" (click)="drawer.toggle()">Home   <span class="default-spacer"></span><mat-icon>home</mat-icon></a>
+      <a  mat-list-item  routerLink="/contractor/searchProject" (click)="drawer.toggle()"    > Search Project  <span class="default-spacer"></span><mat-icon>assignment</mat-icon> </a>
+      <a mat-list-item  routerLink="/contractor/profile" (click)="drawer.toggle()">Profile   <span class="default-spacer"></span><mat-icon>account_circle</mat-icon></a>
+      <a mat-list-item  routerLink="/contractor/configuration" (click)="drawer.toggle()">Configuration   <span class="default-spacer"></span><mat-icon>settings</mat-icon></a>
+      <a mat-list-item routerLink="">Log Out<span class="default-spacer"></span><mat-icon>exit_to_app</mat-icon></a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <mat-toolbar>
+
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <span class="user-name"  >TeContrato </span>
+      </button>
+      <span class="default-spacer"></span>
+
+
+
+
+    </mat-toolbar>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

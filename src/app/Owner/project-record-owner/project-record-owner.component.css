@@ -1,0 +1,16 @@
+.table-wrapper{
+  width: 1250px;
+  margin: 20px auto;
+}
+
+.example-full-width {
+  width: 100%;
+  margin-right: 12px;
+  min-width: 150px;
+  max-width: 500px;
+  margin-left: 30%;
+}
+
+.mat-grid-tile {
+  margin-left: 10%;
+}

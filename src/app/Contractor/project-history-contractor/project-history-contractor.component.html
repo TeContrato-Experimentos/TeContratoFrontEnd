@@ -1,0 +1,75 @@
+<app-main-nav-contractor>
+  <div class="table-wrapper">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Keyword</mat-label>
+      <input matInput placeholder="" value="">
+    </mat-form-field>
+    <button mat-raised-button color="primary">SEARCH</button>
+    <mat-grid-list cols="5" rowHeight="200px">
+      <mat-grid-tile
+        *ngFor="let tile of contents"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows">
+        <mat-card class="title">
+          <mat-card-title>Project Information</mat-card-title>
+          <mat-card-content>
+            <p>Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button mat-button color="primary" routerLink="/contractor/projectProfile" routerLinkActive="active">LOOK</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-content>
+            <img mat-card-image src="https://th.bing.com/th/id/R.65ffb76d147f356a39c8e45c4117e57a?rik=JPls9Ym0OOTEFg&pid=ImgRaw&r=0" alt="Photo" height="150px">
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile
+        *ngFor="let tile of contents"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows">
+        <mat-card class="title">
+          <mat-card-title>Project Information</mat-card-title>
+          <mat-card-content>
+            <p>Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button mat-button color="primary" routerLink="/contractor/projectProfile" routerLinkActive="active">LOOK</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-content>
+            <img mat-card-image src="https://th.bing.com/th/id/OIP.cW5pGlsJR57k-cuXq4OzBwHaDW?pid=ImgDet&rs=1" alt="Photo" height="150px">
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile class="projects"
+                     *ngFor="let tile of contents"
+                     [colspan]="tile.cols"
+                     [rowspan]="tile.rows">
+        <mat-card class="title">
+          <mat-card-title>Project Information</mat-card-title>
+          <mat-card-content>
+            <p>Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button mat-button color="primary" routerLink="/contractor/projectProfile" routerLinkActive="active">LOOK</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-content>
+            <img mat-card-image src="https://th.bing.com/th/id/R.787cc886b807b5bf46e0785ec7efebb3?rik=1M77twCWQCNK4w&pid=ImgRaw&r=0" alt="Photo" height="150px">
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <button class="final" mat-raised-button color="black"  routerLink="/contractor/profile" routerLinkActive="active">BACK</button>
+  </div>
+</app-main-nav-contractor>

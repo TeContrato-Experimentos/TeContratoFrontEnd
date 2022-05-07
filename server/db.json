@@ -1,0 +1,134 @@
+{
+  "contractor": [
+    {
+      "id": 1,
+      "name": "Damian",
+      "lastname": "Bernabe",
+      "number": 987321654,
+      "email": "damian.bernabe@gmail.com",
+      "password": "hello"
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "lastname": "Canadas",
+      "number": 987321123,
+      "email": "john.canadas@gmail.com",
+      "password": "hello"
+    },
+    {
+      "id": 4,
+      "name": "Alejo",
+      "lastname": "Roldan",
+
+      "number": 987456654,
+      "email": "alejo.roldan@gmail.com",
+      "password": "hello"
+    },
+    {
+      "firstname": "Maria",
+      "lastname": "Diaz",
+      "number": "951753852",
+      "email": "maria.diaz@gmail.com",
+      "password": "holaa",
+      "id": 3
+    },
+    {
+      "firstname": "Ramon",
+      "lastname": "Villar",
+      "number": "986412357",
+      "email": "ramon.villar@hotmail",
+      "password": "holaaaaaaaaaa",
+      "id": 5
+    },
+    {
+      "firstname": "Emilio",
+      "lastname": "Rincon",
+      "number": "9876357123",
+      "email": "emilio.rincon@gmail.com",
+      "password": "987654",
+      "id": 6
+    },
+    {
+      "firstname": "Rodrigo",
+      "lastname": "Carpa",
+      "number": "852753654",
+      "email": "rodri.carpa@gmail.com",
+      "password": "456123",
+      "id": 7
+    }
+  ],
+  "owner": [
+    {
+      "firstname": "Carlos",
+      "lastname": "Aguade",
+      "number": "986357456",
+      "email": "carlos.aguade@gmail.com",
+      "password": "holaaaaa",
+      "id": 1
+    },
+    {
+      "firstname": "Izan",
+      "lastname": "Tello",
+      "number": "987532698",
+      "email": "izan.tello@gmail.com",
+      "password": "holaawewas",
+      "id": 2
+    },
+    {
+      "firstname": "Julio",
+      "lastname": "Trelles",
+      "number": "987352145",
+      "email": "julio.trelles@hotrmai.com",
+      "password": "45321",
+      "id": 3
+    },
+    {
+      "firstname": "Hector",
+      "lastname": "Egocheaga",
+      "number": "963584123",
+      "email": "hector.egocheaga@hotmail.com",
+      "password": "123456",
+      "id": 4
+    }
+  ],
+  "project": [
+    {
+      "name": "Project #1",
+      "obj": "be cute and safe",
+      "description": "I like trees",
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ],
+  "cardCompany": [
+    {
+      "id": 1,
+      "companyName": "Visa"
+    },
+    {
+      "id": 2,
+      "companyName": "MasterCard"
+    },
+    {
+      "id": 3,
+      "companyName": "Dinners"
+    }
+  ],
+  "paymentMethodOwner": [],
+  "budget": [],
+  "AUTH": [
+    {
+      "correo": "hola@gmail.com",
+      "pass": "123"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.main-div mat-card{
+  padding: 0px;
+}
+
+.login-form {
+  padding: 20px;
+}
+
+.mat-radio-button {
+  margin-left: 16px;
+}
+
+.card1 {
+  width: 1000px;
+}

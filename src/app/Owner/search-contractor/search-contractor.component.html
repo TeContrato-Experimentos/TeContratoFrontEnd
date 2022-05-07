@@ -1,0 +1,131 @@
+<app-main-nav-owner>
+<div class="table-wrapper">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Keyword</mat-label>
+    <input matInput placeholder="" value="">
+  </mat-form-field>
+  <button mat-raised-button color="primary">SEARCH</button>
+  <mat-grid-list cols="5" rowHeight="200px">
+    <mat-grid-tile *ngFor="let tile of tiles"
+                   [colspan]="tile.cols"
+                   [rowspan]="tile.rows">
+      <form>
+        <h1>Filters</h1>
+        <mat-form-field class="option" appearance="fill">
+          <mat-label>Specialty</mat-label>
+          <mat-select [(value)]="selected">
+            <mat-option>None</mat-option>
+            <mat-option value="option1">Installation</mat-option>
+            <mat-option value="option2">Carpentry</mat-option>
+            <mat-option value="option3">Plumbing</mat-option>
+            <mat-option value="option3">Locksmith</mat-option>
+            <mat-option value="option3">Electrical technician</mat-option>
+            <mat-option value="option3">Brickwork</mat-option>
+            <mat-option value="option3">Painting</mat-option>
+            <mat-option value="option3">Construction</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="option" appearance="fill">
+          <mat-label>Location</mat-label>
+          <mat-select [(value)]="selected1">
+            <mat-option>None</mat-option>
+            <mat-option value="option1">San Isidro</mat-option>
+            <mat-option value="option2">Monterrico</mat-option>
+            <mat-option value="option3">Miraflores</mat-option>
+            <mat-option value="option3">La Molina</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="option" appearance="fill">
+          <mat-label>Years of Work Experience</mat-label>
+          <mat-select [(value)]="selected2">
+            <mat-option>None</mat-option>
+            <mat-option value="option1">1 a 2</mat-option>
+            <mat-option value="option2">2 a 3</mat-option>
+            <mat-option value="option3">3 a 5</mat-option>
+            <mat-option value="option3">5 a más</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="option" appearance="fill">
+          <mat-label>Classification</mat-label>
+          <mat-select [(value)]="selected3">
+            <mat-option>None</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="option" appearance="fill">
+          <mat-label>Estimated price range</mat-label>
+          <mat-select [(value)]="selected4">
+            <mat-option>None</mat-option>
+            <mat-option value="option1">100 a 300</mat-option>
+            <mat-option value="option2">300 a 500</mat-option>
+            <mat-option value="option3">500 a más</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </mat-grid-tile>
+    <mat-grid-tile
+      *ngFor="let tile of contents"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <mat-card class="title">
+        <mat-card-title>Contractor Information</mat-card-title>
+        <mat-card-content>
+          <p>Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button color="primary" routerLink="/owner/contractorProfile" routerLinkActive="active">LOOK</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-content>
+          <img mat-card-image src="https://www.bing.com/images/blob?bcid=ToAVZmeLKF4DZQ" alt="Photo" height="150px">
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile
+      *ngFor="let tile of contents"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <mat-card class="title">
+        <mat-card-title>Contractor Information</mat-card-title>
+        <mat-card-content>
+          <p>Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button color="primary" routerLink="/owner/contractorProfile" routerLinkActive="active">LOOK</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-content>
+          <img mat-card-image src="https://www.bing.com/images/blob?bcid=ToAVZmeLKF4DZQ" alt="Photo" height="150px">
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile
+      *ngFor="let tile of contents"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <mat-card class="title">
+        <mat-card-title>Contractor Information</mat-card-title>
+        <mat-card-content>
+          <p>Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button color="primary" routerLink="/owner/contractorProfile" routerLinkActive="active">LOOK</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-content>
+          <img mat-card-image src="https://www.bing.com/images/blob?bcid=ToAVZmeLKF4DZQ" alt="Photo" height="150px">
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <button class="final" mat-raised-button color="black" routerLink="/owner/home" routerLinkActive="active">BACK</button>
+</div>
+</app-main-nav-owner>

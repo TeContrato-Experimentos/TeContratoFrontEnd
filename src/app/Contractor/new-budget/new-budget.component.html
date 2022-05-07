@@ -1,0 +1,41 @@
+<app-main-nav-contractor>
+  <mat-card align="center">
+<mat-card-content>
+
+
+  <h1 align="center">New Budget</h1>
+    <h2>Add Description</h2>
+    <mat-form-field appearance="outline">
+      <textarea matInput></textarea>
+    </mat-form-field>
+
+
+    <h2>Approximate amount</h2>
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="0" class="example-right-align">
+      <span matPrefix>S/.&nbsp;</span>
+    </mat-form-field>
+
+  <h2>Budget availability date</h2>
+  <mat-form-field appearance="outline">
+    <mat-label>Enter a date range</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate placeholder="Start date">
+      <input matEndDate placeholder="End date">
+    </mat-date-range-input>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+  </mat-form-field>
+
+
+</mat-card-content>
+    <mat-card-actions>
+      <button mat-button routerLink="/contractor/ownerProjectProfile"  routerLinkActive="active">BACK</button>
+      <button mat-button routerLink="/contractor/home"  routerLinkActive="active">SEND</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+</app-main-nav-contractor>
+
+

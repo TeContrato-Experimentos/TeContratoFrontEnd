@@ -1,0 +1,71 @@
+<h1>Add Payment Method</h1>
+
+<div mat-dialog-content>
+  <mat-grid-list cols="2" rowHeight="100px">
+    <mat-grid-tile>
+      <h2>Card Company</h2>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <mat-select value="option0">
+          <mat-option value="option0">Visa</mat-option>
+          <mat-option value="option1">MasterCard</mat-option>
+          <mat-option value="option2">Dinners</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <h2>Card Holder Name</h2>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <h2>Card Number</h2>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <h2>EXP Date</h2>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <h2>CVV</h2>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <h2>Label</h2>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+    <button mat-button color="primary" [mat-dialog-close]="true">BACK</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button color="primary">ADD</button>
+  </mat-grid-tile>
+</mat-grid-list>

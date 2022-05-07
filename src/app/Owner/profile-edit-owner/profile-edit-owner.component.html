@@ -1,0 +1,48 @@
+<app-main-nav-owner>
+  <h1>Owner's Profile</h1>
+  <mat-grid-list cols="4" rowHeight="150px">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <mat-card>
+        <mat-card-content>
+          <img mat-card-image src="../../../assets/img1.JPG" alt="Photo" height="250px">
+        </mat-card-content>
+        <mat-card-title>Classification</mat-card-title>
+        <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile
+      *ngFor="let tile of contents"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <mat-card class="title">
+        <mat-card-content>
+          <mat-card-title>Owner's Name <a mat-button fxLayoutAlign="end"><mat-icon>edit</mat-icon></a></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile
+      *ngFor="let tile of contents1"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <mat-card class="title1">
+        <mat-card-title>Owner's Information</mat-card-title>
+        <mat-card-content>
+          <p>Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <a mat-button fxLayoutAlign="end"><mat-icon>edit</mat-icon></a>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile
+      colspan="2">
+      <button mat-raised-button color="primary" routerLink="/owner/projectRecordOwner" routerLinkActive="active">PROJECT HISTORY</button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+
+      <button mat-raised-button color="primary"  routerLink="/owner/profile" routerLinkActive="active">COMPLETE</button>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <button class="final" mat-raised-button color="black" routerLink="/owner/home" routerLinkActive="active" >BACK</button>
+</app-main-nav-owner>

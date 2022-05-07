@@ -1,0 +1,77 @@
+<div class="profile-container-header">
+  <h1>Sign up - Owner</h1>
+  <img src="assets/house.png" class="img-logo">
+</div>
+<div class="profile-container-contain">
+  <div class="form-group">
+
+    <form (submit)="userData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>User name</mat-hint>
+        <input matInput  required [(ngModel)]="userData.Nuser" name="name" >
+      </mat-form-field>
+    </form>
+    <form (submit)="userData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Name</mat-hint>
+        <input matInput  required [(ngModel)]="userData.Nname" name="name" >
+      </mat-form-field>
+    </form>
+    <form  (submit)="userData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Last Name</mat-hint>
+        <input matInput  required [(ngModel)]="userData.Nlastname" name="name"  >
+      </mat-form-field>
+    </form>
+    <form (submit)="userData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>ID</mat-hint>
+        <input type="email" matInput  name="phoneNumber"  [(ngModel)]="userData.Cdni" required  >
+      </mat-form-field>
+    </form>
+    <form (submit)="userData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>E-mail</mat-hint>
+        <input matInput  name="email" type="email" [(ngModel)]="userData.Temail" required  >
+      </mat-form-field>
+    </form>
+    <form (submit)="userData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Password</mat-hint>
+        <input matInput  required name="password" [(ngModel)]="userData.Cpassword" type="password"  >
+      </mat-form-field>
+
+    </form>
+    <form (submit)="ownerData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Biography</mat-hint>
+        <input matInput  name="email" type="email" [(ngModel)]="ownerData.TBio" required  >
+      </mat-form-field>
+    </form>
+    <form (submit)="ownerData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Address</mat-hint>
+        <input matInput  name="email" type="email" [(ngModel)]="ownerData.TAddress" required  >
+      </mat-form-field>
+    </form>
+    <form (submit)="ownerData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>City</mat-hint>
+        <input matInput  name="email" type="email" [(ngModel)]="ownerData.CCity" required  >
+      </mat-form-field>
+    </form>
+    <a mat-button color="primary">ATTACH PHOTO</a>
+    <mat-grid-list cols="2">
+      <mat-grid-tile>
+        <button mat-button color="primary" routerLink="/firstStepRegistration">BACK</button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button color="primary" (click)="AddOwner()" routerLink="">CONTINUE</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+
+  </div>
+
+</div>
+

@@ -1,0 +1,45 @@
+<app-main-nav-owner>
+<h1 align="center">New Project </h1>
+<br><br>
+<mat-grid-list cols="2" gutterSize="50px" rowHeight="2:1" >
+
+<mat-grid-tile colspan="1" (submit)="projectData">
+  <div fxLayout="column" fxLayoutGap="20px">
+  <div>
+  <mat-form-field appearance="outline">
+    <input matInput [(ngModel)]="projectData.name" required placeholder="Project's Name">
+  </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="outline" >
+      <input matInput [(ngModel)]="projectData.obj" required placeholder="Project's Objective">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="outline" class="form">
+      <input matInput [(ngModel)]="projectData.description" required placeholder="Project's Description">
+    </mat-form-field>
+  </div>
+  </div>
+
+</mat-grid-tile>
+  <mat-grid-tile colspan="1">
+    <mat-card>
+      <mat-card-content>
+        <img mat-card-image src="../../../assets/Jardin3.jpg" width="500" height="250">
+      </mat-card-content>
+      <mat-card-actions align="start"><a mat-button>UPLOAD</a></mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button fxLayoutAlign="center" routerLink="/owner/home">BACK</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button fxLayoutAlign="center" (click)="AddProject()" routerLink="/owner/projectProfile">CONTINUE</button>
+  </mat-grid-tile>
+
+</mat-grid-list>
+</app-main-nav-owner>
+
+
+

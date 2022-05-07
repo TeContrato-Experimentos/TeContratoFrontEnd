@@ -1,0 +1,52 @@
+<app-main-nav-owner>
+<h1 align="center">Configuration</h1>
+
+<mat-grid-list cols="2" rowHeight="100px">
+  <mat-grid-tile>
+    <h2>Notifications</h2>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-slide-toggle color="primary"></mat-slide-toggle>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h2>Privacy</h2>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-form-field class="option" >
+      <mat-select value="option0">
+        <mat-option value="option0">Public</mat-option>
+        <mat-option value="option1">Private</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h2>Payment Method</h2>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button color="primary" routerLink="/owner/paymentMethods">SEE ALL</button>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <h2>Security</h2>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button color="primary">SEE ALL</button>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <h2>Advance Configuration</h2>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button color="primary">SEE ALL</button>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <h2>About TeContrato</h2>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button color="primary">SEE ALL</button>
+  </mat-grid-tile>
+
+
+</mat-grid-list>
+</app-main-nav-owner>
